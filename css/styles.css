@@ -1,0 +1,441 @@
+/*
+html
+*/
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+/*
+BODY
+*/
+body {
+    height: 100%;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+
+/*
+HEADER
+*/
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #313131;
+    color: #cdcdcd;
+    display: flex;
+    flex-direction: row;
+}
+
+header a {
+    width: 25%;
+}
+
+header a img {
+    width: 175px;
+}
+
+header nav {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 5px;
+    color: #cdcdcd;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+/*
+MAIN
+*/
+
+main {
+    /*background-color:#302b2a;*/
+    background-color: #272323;
+    color: #f2f0f0;
+}
+
+main .negativo {
+    background-color: #f2f0f0;
+    color: #272323;
+}
+
+main section.principal {
+    align-items: flex-start;
+    display: flex;
+    height: auto;
+}
+
+main section.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: top;
+}
+
+main section.contacto {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+main section.headerpresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: top;
+}
+
+main article {
+    font-size: large;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+main article hr {
+    height: 0px;
+    width: 100%;
+    background-color: #f2f0f0;
+}
+
+main section p.presentation {
+    width: 33%;
+    margin: 5px;
+    font-size: 150%;
+    text-align: center;
+}
+
+.detalles {
+    width: 99%;
+    margin: 5px;
+    font-size: 120%;
+    text-align: left;
+}
+
+main section p.headerpresentation {
+    width: 33%;
+    margin-top: 15px;
+    font-size: 250%;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+
+main section article.description {
+    font-size: 75%;
+    width: 70%;
+}
+
+main section article.relativo {
+    position: relative;
+    height: 33vh
+}
+
+main section article a.absoluto {
+    position: absolute;
+    right: 5%;
+    bottom: 5%
+}
+
+main section article.preview {
+    font-size: 75%;
+    width: 90%;
+}
+
+
+.imagen-float {
+    float: left;
+    height: 15vh;
+    margin: 1%
+}
+
+
+.fin-float {
+    clear: both;
+}
+
+main section article.noticiasrelativo {
+    position: relative;
+    height: 15vh
+}
+
+
+.imagenfondo {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+#imagen-presentacion {
+    background-image: url('../img/fondopresentacion.jpg');
+    background-position-y: 75%;
+    height: 33vh;
+    width: 100%;
+}
+
+#imagen-prin-noticias {
+    background-image: url(../img/noticiaspresentacion.jpg);
+    background-position-y: 100%;
+    height: 50vh;
+    width: 50%;
+}
+
+#imagen-prin-tecnica {
+    background-image: url(../img/presentaciontecnica.jpg);
+    height: 50vh;
+    width: 50%;
+}
+
+#imagen-noticias {
+    background-image: url('../img/noticias/noticias.png');
+    background-position-y: 60%;
+    height: 33vh;
+    width: 100%;
+}
+
+
+
+#imagen-noticias-primerafotografa {
+    background-image: url(../img/noticias/primerafotografa.gif);
+    height: 15vh;
+    width: 10%;
+    background-position-y: 100%;
+}
+
+#imagen-noticias-primerafoto {
+    background-image: url(../img/noticias/primerafoto.jpg);
+    height: 15vh;
+    width: 10%;
+    background-position-y: 100%;
+}
+
+#imagen-noticias-fotoanual {
+    background-image: url(../img/noticias/fotoanual.jpg);
+    height: 15vh;
+    width: 10%;
+    background-position-y: 50%;
+}
+
+#imagen-noticias-camaravendida {
+    background-image: url(../img/noticias/camaravendida.jpg);
+    height: 15vh;
+    width: 10%;
+    background-position-y: 50%;
+}
+
+
+#imagen-noticias-tiposobjetivos {
+    background-image: url(../img/noticias/tiposobjetivos.jpg);
+    height: 15vh;
+    width: 10%;
+    background-position-y: 50%;
+}
+
+
+#imagen-contacto {
+    background-image: url(../img/contacto/contacto.jpg);
+    background-position-x: 100%;
+    height: 100vh;
+    width: 50%;
+}
+
+#imagen-tecnica {
+    background-image: url('../img/tecnica/tecnica.png');
+    background-position-y: 100%;
+    height: 33vh;
+    width: 100%;
+}
+
+#imagen-tecnica-luz {
+    background-image: url(../img/tecnica/tecnicaluz.webp);
+    height: 15vh;
+    width: 10%;
+}
+
+#imagen-tecnica-color {
+    background-image: url(../img/tecnica/tecnicacolor.png);
+    height: 15vh;
+    width: 10%;
+}
+
+#imagen-tecnica-composicion {
+    background-image: url(../img/tecnica/tecnicacomposicion.jpg);
+    height: 15vh;
+    width: 10%;
+    background-position-y: 100%;
+}
+
+#imagen-tecnica-genero {
+    background-image: url(../img/tecnica/tecnicagenero.jpg);
+    height: 15vh;
+    width: 10%;
+    background-position-y: 100%;
+}
+
+#imagen-tecnica-edicionrevelado {
+    background-image: url(../img/tecnica/tecnicaedicion.jpg);
+    height: 15vh;
+    width: 10%;
+    background-position-y: 100%;
+}
+
+
+#imagen-luz {
+    background-image: url('../img/tecnica/luz/luz.jpg');
+    background-position-y: 100%;
+    height: 33vh;
+    width: 100%;
+}
+
+#imagen-luz-caracteristicas {
+    background-image: url(../img/tecnica/luz/caracteristicasluz.jpg);
+    height: 33vh;
+    width: 30%;
+}
+
+#imagen-luz-control {
+    background-image: url(../img/tecnica/luz/controlluz.webp);
+    height: 33vh;
+    width: 30%;
+}
+
+#imagen-luz-iluminacion {
+    background-image: url(../img/tecnica/luz/iluminacion.jpg);
+    height: 33vh;
+    width: 30%;
+    background-position-y: 100%;
+}
+
+
+#imagen-controlluz {
+    background-image: url('../img/tecnica/luz/controlluz/fondocontrolluz.jpg');
+    background-position-y: 30%;
+    height: 33vh;
+    width: 100%;
+}
+
+#imagen-controlluz-aperturadiafragama {
+    background-image: url(../img/tecnica/luz/controlluz/aperturadediafragma.jpg);
+    height: 60vh;
+    width: 50%;
+}
+
+#imagen-controlluz-velocidadobturacion {
+    background-image: url(../img/tecnica/luz/controlluz/velocidadobturacion.jpg);
+    height: 60vh;
+    width: 50%;
+}
+
+#imagen-controlluz-sensibilidadiso {
+    background-image: url(../img/tecnica/luz/controlluz/sensibilidadiso.webp);
+    height: 60vh;
+    width: 50%;
+}
+
+main fieldset {
+    display: flex;
+    flex-direction: column;
+    border-color: transparent;
+}
+
+.inputbox {
+    font: message-box;
+    color: #495057;
+    border: 1px solid #272323;
+    border-radius: .25rem;
+    margin-bottom: 20px;
+    height: auto;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #f2f0f0;
+    border: 1px solid #ced4da;
+}
+
+main form {
+    display: block;
+}
+
+.checkbox {
+    border-radius: .25rem;
+    background-color: #f2f0f0;
+    border: 1px solid #ced4da;
+}
+
+#idcheck {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+    font-size: 60%;
+}
+
+#legendform {
+    font-size: 90%;
+}
+
+
+/*
+FOOTER
+*/
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #313131;
+    color: #cdcdcd;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    align-items: center;
+}
+
+footer h2 {
+    width: 100%;
+    line-height: 5%;
+}
+
+footer a {
+    font-size: 90%;
+    text-decoration: none;
+    margin: 5px;
+    color: #cdcdcd;
+}
+
+footer aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    width: 50px;
+}
